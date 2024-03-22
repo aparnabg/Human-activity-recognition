@@ -2,7 +2,7 @@
 
 This work shows how a combination of Wi-Fi Channel State Information (CSI) and Deep Learning can be used for Human Activity Recognition(HAR). 
 
-We have used publicly available Wifi CSIdata for this. Data can be downloaded from : 
+We have used publicly available Wifi CSIdata for this. Data can be downloaded from : <https://data.mendeley.com/datasets/v38wjmz6f6/1>
 
 ## Model
 I have implemented cnn model to the data.  By analysing the CNN model, I had a conclusion that the CNN model can't understand entirely the data because it has temporal features along with the spatial features, that why adding LSTM layers to the data gives more accurate predictions.	
