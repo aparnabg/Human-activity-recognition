@@ -1,16 +1,43 @@
 # Human-activity-recognition
 
-This work shows how a combination of Wi-Fi Channel State Information (CSI) and Deep Learning can be used for Human Activity Recognition(HAR). 
+This repository contains an implementation of a Convolutional Neural Network with Long Short-Term Memory (CNN-LSTM) architecture for Human Activity Recognition (HAR) using Wi-Fi Channel State Information (CSI) data.
+
+
+## Introduction
+
+The primary objective of this project is to recognize human activities based on Wi-Fi signal data. We explore the combination of spatial and temporal features by employing a CNN-LSTM architecture, which allows the model to capture both the spatial and temporal patterns present in the data.
+
 
 We have used publicly available Wifi CSIdata for this. Data can be downloaded from : <https://data.mendeley.com/datasets/v38wjmz6f6/1>
 
-## Model
-I have implemented cnn model to the data.  By analysing the CNN model, I had a conclusion that the CNN model can't understand entirely the data because it has temporal features along with the spatial features, that why adding LSTM layers to the data gives more accurate predictions.	
+## Optimizers Comparison
 
-## various optimizers
-Here, we investigate the impact of various optimizers on the performance of a Convolutional Neural Network with Long Short-Term Memory (CNN-LSTM) architecture for Human Activity Recognition (HAR) using Wi-Fi Channel State Information (CSI) data. We employ a range of optimizers, including Adadelta, Adagrad, Adam, RMSprop, SGD, and Nadam, to train and evaluate the model over 20 epochs. Our experimental results demonstrate significant variations in model accuracy, with values ranging from 31\% to 95\%. This study explains how choosing different optimization methods affects how well deep learning models work for recognising human activities using Wi-Fi signal data.
+We conducted experiments to investigate the impact of various optimizers on the performance of the CNN-LSTM model. The following optimizers were evaluated:
 
-Details study of the models and impact of various optimizers can be found in report.pdf
+- Adadelta
+- Adagrad
+- Adam
+- RMSprop
+- SGD
+- Nadam
+
+### Experimental Results
+
+The model was trained and evaluated over 20 epochs using each optimizer. The experimental results revealed significant variations in model accuracy:
+
+- **Minimum Accuracy**: 31%
+
+- **Maximum Accuracy**: 95%
+
+These results highlight the importance of selecting an appropriate optimization method when training deep learning models for HAR using Wi-Fi signal data.
+
+## Report
+
+For a detailed study of the models and the impact of various optimizers, please refer to [report.pdf](report.pdf).
+
+## Conclusion
+
+Our analysis indicates that while CNN models can capture spatial features effectively, they may struggle with understanding temporal features in the data. By incorporating LSTM layers into the architecture, we observed improved accuracy in predicting human activities using Wi-Fi CSI data.
 
 
 
